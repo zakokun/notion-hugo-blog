@@ -30,8 +30,9 @@ export async function getCoverLink(
   };
 }
 
-export function getFileName(title: string, page_id: string): string {
+export function getFileName(title: string, page_id: string, lang: string = ''): string {
+  lang = lang ? "." + lang : "";
   return title.replaceAll(" ", "-").replace(/--+/g, "-") +
   "-" +
-  page_id.replaceAll("-", "") + '.md';
+  page_id.replaceAll("-", "") + lang + '.md';
 }

@@ -1,5 +1,15 @@
 version = "0.3.X"
 [page]
+seriesNavigation = true
+# whether to enable last modified time
+# 是否启用最后修改时间
+enableLastMod = true
+# whether to enable word count
+# 是否启用字数统计
+enableWordCount = false
+# whether to enable reading time estimation
+# 是否启用阅读时间估计
+enableReadingTime = false
 [page.math]
 enable = true
 blockLeftDelimiter = "\\["
@@ -8,3 +18,10 @@ inlineLeftDelimiter = "\\("
 inlineRightDelimiter = "\\)"
 copyTex = true
 mhchem = true
+
+[footer]
+# 是否显示作者
+author = false
+
+[section]
+paginate = 10

@@ -223,7 +223,9 @@ export async function savePage(
   }
   // otherwise update the page
   console.info(`[Info] Updating ${postpath}`);
-
+  var lang = post?.metadata?.properties?.language?.type === "select"
+  ? post.metadata.properties.language.select?.name ?? ""
+  : "";
   const { title, pageString } = await renderPage(page, notion);
   const fileName = getFileName(title, page.id);
   await sh(`hugo new "${mount.target_folder}/${fileName}"`, false);
