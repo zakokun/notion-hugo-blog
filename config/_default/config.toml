@@ -28,3 +28,14 @@ theme = "DoIt"
     url = "/about/"
     title = ""
     weight = 4
+
+
+# whether to use robots.txt
+# 是否使用 robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+# 是否使用 git 信息
+enableGitInfo = true
+# whether to use emoji code
+# 是否使用 emoji 代码
+enableEmoji = true
